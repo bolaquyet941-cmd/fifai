@@ -1,0 +1,6 @@
+image: gitpod/workspace-python:latest
+
+tasks:
+  - name: Setup
+    init: pip install -r requirements.txt
+    command: tmux new-session -d -s bot 'python lvupbr/run_all.py'
